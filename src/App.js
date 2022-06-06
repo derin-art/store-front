@@ -1,9 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import { Route, BrowserRouter, Link } from 'react-router-dom';
+
+
+import { Context } from './Tetst/Context';
+import Second from './components/second';
+import Arrival from './components/Arrival';
 
 function App() {
   return (
-    <h1 className='text-blue-500'>Hey</h1>
+    <div>
+      <BrowserRouter children={
+         <Context>
+        
+         </Context>
+      }>
+      </BrowserRouter>
+    </div>
   
   );
 }

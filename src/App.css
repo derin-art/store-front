@@ -2,7 +2,161 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "PlayFair";
+  src: url("../public/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "QuickSand";
+  src: url("../public/Quicksand/Quicksand-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("../public/Prompt/Prompt-Medium.ttf");
+}
+@font-face {
+  font-family: "Paytone";
+  src: url("../public/Paytone/PaytoneOne-Regular.ttf");
+}
 
+@keyframes slide{
+  0%{
+    transform: translateX(0%);
+    transition: linear;
+    transition-duration: 1s;
+  }
+
+  20%{
+    transform: translateX(0%);
+    transition: linear;
+    transition-duration: 1s;
+  }
+  40%{
+    transform: translateX(-100%);
+    transition: linear;
+    transition-duration: 1s;
+  }
+  60%{
+    transform: translateX(-200%);
+    transition: linear;
+    transition-duration: 1s;
+
+  }
+  80%{
+    transform: translateX(-100%);
+    transition: linear;
+    transition-duration: 2s;
+  }
+  100%{
+    transform: translateX(0%);
+    transition: linear;
+    transition-duration: 2s;
+  }
+}
+
+
+@keyframes slideMedium {
+  0%{
+    transform: translateX(0%);
+    transition: linear;
+    transition-duration: 1s;
+  }
+
+  20%{
+    transform: translateX(0%);
+    transition: linear;
+    transition-duration: 1s;
+  }
+  40%{
+    transform: translateX(-50%);
+    transition: linear;
+    transition-duration: 1s;
+  }
+  60%{
+    transform: translateX(-100%);
+    transition: linear;
+    transition-duration: 1s;
+
+  }
+  80%{
+    transform: translateX(-50%);
+    transition: linear;
+    transition-duration: 2s;
+  }
+  100%{
+    transform: translateX(0%);
+    transition: linear;
+    transition-duration: 2s;
+  }
+  
+}
+
+@keyframes slideSmall {
+  0%{
+    transform: translateX(0%);
+    transition: linear;
+    transition-duration: 1s;
+  }
+
+  20%{
+    transform: translateX(0%);
+    transition: linear;
+    transition-duration: 1s;
+  }
+  40%{
+    transform: translateX(-30%);
+    transition: linear;
+    transition-duration: 1s;
+  }
+  60%{
+    transform: translateX(-60%);
+    transition: linear;
+    transition-duration: 1s;
+
+  }
+  80%{
+    transform: translateX(-30%);
+    transition: linear;
+    transition-duration: 2s;
+  }
+  100%{
+    transform: translateX(0%);
+    transition: linear;
+    transition-duration: 2s;
+  }
+  
+}
+
+
+
+
+@keyframes fadeIn {
+  0%{
+   opacity: 0;
+  }
+
+  50%{
+    opacity: 50 ;
+  }
+  100%{
+    opacity: 100;
+  }
+  
+}
+
+@keyframes fadeOut {
+  0%{
+   opacity: 100;
+  }
+
+  50%{
+    opacity: 50 ;
+  }
+  100%{
+    opacity: 0;
+  }
+  
+}
 
 .App {
   text-align: center;
