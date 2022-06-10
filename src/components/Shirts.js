@@ -8,7 +8,7 @@ export default function ShirtsPage(){
     
     const Shirts = items.map(item => {
         if(item.name.toLowerCase().includes("shirt")){
-            return <div className="mb-24 p-2">
+            return <div className="mb-24 p-2" key={item._id}>
                 <ItemCard img={item.img} key={item._id} id={item._id} description={item.description} comments={item.comments} name={item.name} price={item.price} type={item.type}/>
             </div>
         }

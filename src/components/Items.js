@@ -17,7 +17,7 @@ export default function Items(){
   
     const AllItems = items.map(item => {
         
-            return <div className="mb-24 p-2">
+            return <div className="mb-24 p-2" key={item._id}>
                 <ItemCard img={item.img} key={item._id} id={item._id} description={item.description} comments={item.comments} name={item.name} price={item.price} type={item.type}/>
             </div>
     })
@@ -42,8 +42,8 @@ export default function Items(){
    
     return <h1>
        <div className="mt-12 flex flex-wrap items-center justify-center overflow-x-hidden">
-       <div className={`${AllItems ? "hidden" : ""} flex flex-wrap `}> {Decoy}</div>
-        {AllItems ? AllItems : Decoy}
+       <div className={`${items.length? "hidden" : "block"} flex flex-wrap `}> {Decoy}</div>
+        {AllItems}
        </div>
     </h1>
 }
