@@ -22,7 +22,7 @@ export default function Second(){
 
     
     console.log(usePathname())
-    return  <div className={`h-full w-screen scrollbar-hide bg-gray-100 ${bg === "/jackets" || "/sweaters"? "h-screen": "h-full"}`}>
+    return  <div className={`h-full max-w-screen scrollbar-hide bg-gray-100 ${bg === "/jackets" || "/sweaters"? "h-screen": "h-full"}`}>
     <Header />
     <MainPage />
    

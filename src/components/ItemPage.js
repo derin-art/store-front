@@ -108,7 +108,6 @@ export default function ItemPage(){
                   }
               })
           }
-          console.log(finalArray)
           return finalArray
          /*   prev.some(item => {
               if(item._id === id){

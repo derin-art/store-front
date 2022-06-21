@@ -9,14 +9,14 @@ import Arrival from './components/Arrival';
 
 function App() {
   return (
-    <div>
+    
       <BrowserRouter children={
          <Context>
         
          </Context>
       }>
       </BrowserRouter>
-    </div>
+   
   
   );
 }
