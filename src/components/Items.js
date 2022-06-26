@@ -42,7 +42,7 @@ export default function Items(){
    
     return <div>
        <div className="mt-12 flex flex-wrap items-center justify-center">
-       <div className={`${items.length? "hidden" : "block"} flex flex-wrap w-full scrollbar-hide`}> {Decoy}</div>
+       <div className={`${items.length? "hidden" : "block"} items-center justify-center flex flex-wrap w-full scrollbar-hide`}> {Decoy}</div>
         {AllItems}
        </div>
     </div>
