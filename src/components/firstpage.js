@@ -16,14 +16,14 @@ export default function First(){
   
      
     
-    return <div className="scrollbar-hide">
+    return <div className="">
       
 
            <Routes>
 
                <Route element={
                <div className="max-w-screen">
-                 <div className="mt-24 overflow-hidden w-full">
+                 <div className="mt-24 w-full overflow-hidden">
                  <Carousel />
                  </div>
                  <div className="sm:mt-24 mt-6 overflow-x-hidden w-full scrollbar-hide">
