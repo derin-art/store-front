@@ -44,11 +44,11 @@ export default function Header(){
             </Link>
         </div>
         <div className="w-full font-serif font-thin fixed h-12 bg-white flex mt-12 justify-center items-center text-black">
-        <div className="absolute left-0 flex z-200 sm:hidden">
+        <div className="absolute left-0 flex z-50 sm:hidden">
            <button onClick={()=>{setIsSideBar(prev => !prev)}}>
            {MenuLogo}
            </button>
-           <div className={`absolute -translate-x-48 left-0 duration-200 ${isSideBar ? "translate-x-0" : ""}`}>
+           <div className={`absolute -translate-x-48 left-0 -z-10 duration-200 ${isSideBar ? "translate-x-0" : ""}`}>
              <SideBar setIsSideBar={setIsSideBar}/>
             </div>
         </div>
