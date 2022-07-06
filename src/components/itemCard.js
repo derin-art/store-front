@@ -20,13 +20,13 @@ export default function ItemCard({img, price, name, comments, description, id })
         setStarRating(nextValue)
     }
     return <Link to={`item/${id}`}>
-        <div className="h-62 flex flex-col border border-gray-300">
+        <div className="h-62 flex flex-col border border-gray-300 rounded-xl">
         <div className="w-48 bg-gray-100 border-gray-300">
-                    <img  className="w-full" src={`data:image/jpeg;base64,${img}`}></img>
+                    <img  className="w-full rounded-t-xl" src={`data:image/jpeg;base64,${img}`}></img>
                 </div>
-        <div className="bg-white font-mono pl-2 w-48">
-                    <div className="text-sm  mb-2 uppercase">{name}</div>
-                    <div className="text-xs mb-2 ">${price}</div>
+        <div className="bg-white font-mono pl-2 w-48 rounded-b-xl">
+                    <div className="text-sm  mb-2 uppercase font-Prompt mt-1">{name}</div>
+                    <div className="text-xs mb-2 font-Prompt ">${price}</div>
                     <StarRatingComponent name="rating" editing={true} starColor="" onStarClick={()=>{onStarChange()}} emptyStarColor="#b2beb5" value={startRating}></StarRatingComponent>
     </div>
     </div>
