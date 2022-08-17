@@ -1,30 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-import { Route, BrowserRouter, Link } from 'react-router-dom';
+import logo from "./logo.svg";
+import "./App.css";
+import { Route, BrowserRouter, Link } from "react-router-dom";
 
-
-import { Context } from './Tetst/Context';
-import Second from './components/second';
-import Arrival from './components/Arrival';
+import { Context } from "./Tetst/Context";
+import Second from "./components/second";
+import Arrival from "./components/Arrival";
 
 function App() {
-  return (
-    
-      <BrowserRouter children={
-         <Context>
-        
-         </Context>
-      }>
-      </BrowserRouter>
-   
-  
-  );
+  return <BrowserRouter children={<Context></Context>}></BrowserRouter>;
 }
 
 export default App;
 
-
-  {/* <div className="App">
+{
+  /* <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -39,4 +28,5 @@ export default App;
           Learn React
         </a>
       </header>
-    </div> */}
+    </div> */
+}
