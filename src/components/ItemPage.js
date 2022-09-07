@@ -175,7 +175,7 @@ export default function ItemPage() {
                   </div>
 
                   <div
-                    className="text-gray-700 border font-mono text-xs block mr-2 hidden md:block p-2"
+                    className="text-gray-700 border text-xs block mr-2 hidden md:block p-2 font-Prompt"
                     style={{ maxWidth: "400px" }}
                   >
                     <p className="block text-lg">Description</p>
@@ -183,7 +183,7 @@ export default function ItemPage() {
                   </div>
 
                   <div
-                    className="text-gray-700 border font-mono text-xs mt-6 pb-12 mr-2 hidden md:block"
+                    className="text-gray-700 border text-xs mt-6 pb-12 mr-2 hidden md:block font-Prompt"
                     style={{ maxWidth: "400px" }}
                   >
                     <div
